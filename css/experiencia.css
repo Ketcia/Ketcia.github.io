@@ -1,0 +1,128 @@
+.experiencia {
+   max-width: 1200px;
+   display: grid;
+   grid-template-columns: 1fr 2fr;
+   gap: 100px;
+   margin: 0 auto;
+   align-items: center;
+   padding: 40px 20px;
+}
+
+.experiencia .subtitulo {
+   color: #ccc;
+   max-width: 4ch;
+   min-width: 3ch;
+}
+
+.experiencia-texto {
+   font-size: 1.5rem;
+   max-width: 50ch;
+   line-height: 1.33;
+   margin-bottom: 60px;
+   color: #3d3d3d;
+}
+
+.experiencia-texto strong {
+   color: #141414;
+}
+.empresa {
+   display: grid;
+   grid-template-columns: 2fr 1fr;
+   padding: 20px;
+   background-color: #f5f5f5;
+   margin-bottom: 20px;
+   border-radius: 4px;
+   position: relative;
+   gap: 10px 20px;
+}
+
+.empresa::before {
+   content: "";
+   display: block;
+   position: absolute;
+   background: linear-gradient(#da1c1c, #ff3939);
+   width: 4px;
+   height: 25px;
+   top: 25px;
+   left: -4px;
+}
+
+.empresa-ano {
+   position: absolute;
+   top: 25px;
+   left: -55px;
+   color: #3d3d3d;
+   font-family: "JetBrains Mono", "Poppins", sans-serif;
+   font-weight: 600;
+}
+
+.empresa-texto {
+   max-width: 45ch;
+   grid-column: 1;
+   grid-row: 2;
+}
+
+.empresa-habilidades {
+   grid-column: 2;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 10px;
+   line-height: 2rem;
+   align-items: center;
+   align-content: start;
+}
+
+.empresa-habilidades li {
+   background-color: white;
+   border-radius: 4px;
+   padding: 3px 6px;
+   line-height: 1.2rem;
+}
+
+@media (max-width: 800px) {
+   .experiencia .subtitulo {
+      color: #141414;
+      max-width: initial;
+   }
+
+   .experiencia {
+      grid-template-columns: 1fr;
+      gap: 40px;
+   }
+
+   .experiencia-texto {
+      font-size: 1.1rem;
+      max-width: initial;
+   }
+
+   .empresa {
+      grid-template-columns: 1fr;
+   }
+
+   .empresa-ano {
+      position: initial;
+   }
+
+   .empresa-titulo {
+      font-size: 0.9rem;
+      font-weight: 600;
+   }
+
+   .empresa-texto {
+      max-width: initial;
+      grid-column: 1;
+      grid-row: initial;
+      font-size: 0.9rem;
+   }
+
+   .empresa-habilidades {
+      grid-column: 1;
+      font-size: 0.9rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      line-height: 2rem;
+      align-items: center;
+      align-content: start;
+   }
+}

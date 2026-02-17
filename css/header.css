@@ -1,0 +1,43 @@
+.header {
+   max-width: 1200px;
+   display: flex;
+   justify-content: space-between;
+   margin: 0 auto;
+   padding: 50px 40px;
+}
+
+.header-menu {
+   display: flex;
+   gap: 30px;
+   padding: 10px 5px;
+}
+
+.header-menu a {
+   font-size: 1rem;
+   font-family: "JetBrains Mono", "Poppins", sans-serif;
+}
+
+.header img {
+   width: 300px;
+}
+
+@media (max-width: 800px) {
+   .header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 20px;
+      margin-top: 20px;
+   }
+
+   .header-menu {
+      gap: 15px;
+      padding: 10px 3px;
+   }
+}
+
+@media (max-width: 500px) {
+   .header img {
+      width: 200px;
+   }
+}
