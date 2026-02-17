@@ -43,9 +43,10 @@ a {
 
 @media (max-width: 800px) {
    .subtitulo {
-      font-size: 3rem;
+      font-size: 2rem;
       text-transform: capitalize;
       max-width: initial;
       font-weight: 600;
+      white-space: nowrap;
    }
 }
